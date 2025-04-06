@@ -1,0 +1,115 @@
+@charset "ISO-8859-1";
+
+body{
+display: flex;
+    background-image: url(img/BGimg/order.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.back_button, img {
+    width: 50px;
+    margin-left: 10px;
+    margin-top: -260px;
+    }
+.ro{
+    display: flex;
+    background: transparent;
+   /*backdrop-filter: blur(10px);*/
+    /*border: 2px solid rgba(255, 255, 255, .5);*/
+    width: 57vw;
+    padding: 50px 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+        margin-left: 30vw;
+}
+
+.row:hover{
+      box-shadow: 1px 1px 10px rgb(0 0 0 / 60%);
+
+
+}
+.back {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, .5);
+    width: 300px;
+    height: 374px;
+    padding: 10px 40px;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+.cid{
+text-align: center;
+    color: black;
+        background-color: transparent;
+    
+}
+.details{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0px 10px 0px;
+}
+.Remove{
+
+    width: 140px;
+    margin: 0px 10px;
+        height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+.Remove p input{
+
+}
+
+.Remove p input:hover {
+  background-color:#070807; /* Darker green */
+}
+.Remove p input{
+
+width: 140px;
+    text-decoration: none;
+    color: white;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #637871;
+    border: none;
+}
+.Remove2{
+    width: 140px;
+    margin: 0px 10px;
+        height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.Remove2 p input:hover {
+ background-color: #f00;   /*Darker green */
+}
+.Remove2 p input{
+font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    width: 140px;
+    text-decoration: none;
+    color: white;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #ff0000b8;
+    border: none;
+}

@@ -1,0 +1,93 @@
+@charset "ISO-8859-1";
+.card{
+    margin: 15px auto;
+    width: 1150px;
+    
+}
+
+.my1{
+    background-color: #ffffff;
+    width: 1150px;
+    box-sizing: border-box;
+    padding-left: 35px;
+padding-top: 10px;
+}
+.card-items{
+    display: flex;
+    background-color: rgb(255, 253, 253);
+    justify-content: flex-start;
+    width: 1150px;
+    overflow: auto;;
+}
+
+.item{
+   
+    border:none;
+    display: grid;
+    border-radius: 5px;
+    margin:15px;
+    width:160px;
+}
+.item img {
+    width: 10vw;
+    height: 20vh;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+}
+.details{
+    text-align: center;
+    /* color: rgba(0, 0, 0, 0.479); */
+    background-color: white;
+    font-family: 'Arvo', serif;
+    font-size: small;
+}
+
+   .item:hover{
+    
+      box-shadow: 1px 1px 10px rgb(0 0 0 / 60%);
+}
+
+
+.add-to-cart,p,a{
+ text-decoration: none;
+ color: black;
+}
+.add-to-cart{
+    display: flex;
+    item-aline:center;
+  background-color:  #fff64e; /* Green */
+  color: white;
+  padding: 5px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+}
+.add-to-cart:hover {
+  background-color: #fff200; /* Darker green */
+}
+ .Remove,p,a{
+ text-decoration: none;
+ color: black;
+}
+.Remove{
+    display: flex;
+    item-aline:center;
+  background-color:  #fff64e; /* Green */
+  color: white;
+  padding: 5px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+}
+.Remove:hover {
+  background-color: #fff200; /* Darker green */
+}

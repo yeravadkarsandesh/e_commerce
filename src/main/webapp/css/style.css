@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    background-color: hwb(217deg 16% 6%);
+    background-color: #131921;
+    font-family: 'Arvo', serif;
+}
+
+nav {
+    width: 98vw;
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    margin: 0px 10px;
+    font-family: 'Lobster', sans-serif;
+}
+
+.searchbar {
+    width: 40vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.searchbar input {
+    width: 38vw;
+    height: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Arvo', serif;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+
+.btn:hover {
+    font-weight: bold;
+}
+.uname{
+color: white;
+font-family:"Tiro Devanagari Marathi", serif;
+}
+nav ul {
+    display: flex;
+    width: 48vw;
+    justify-content: center;
+    
+}
+
+nav ul li {
+    list-style: none;
+    width: 10vw;
+    display: flex;
+     justify-content: center;
+}
+
+nav ul li a:hover {
+    font-weight: 700;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+      display: flex;
+     justify-content: center;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+}
+
+.container {
+    min-height: calc(100vh - 70px - 20px);
+    overflow-y:scroll;
+    background-color:#e0e1e1;
+    width:100vw;
+}
+
+
+.category ul {
+    background-color: #232f3e;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.category ul li {
+    width: 20vw;
+    display: flex;
+justify-content: center;
+
+}
+
+.category ul li a {
+    text-decoration: none;
+    color: white;
+        width: 132px;
+            display: flex;
+    align-items: center;
+}
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: flex-start;
+}
+.slider {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.slider img {
+    width: 90vw;
+    height: 200px;
+}

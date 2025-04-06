@@ -1,0 +1,36 @@
+@charset "ISO-8859-1";
+body{
+ justify-content: center;
+    align-items: center;
+ display: flex;
+ background-image:url(img/BGimg/detail.jpg);
+ background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+     min-height: 100vh;
+     min-width:100vw;
+}
+.head{
+    margin: 10px;
+}
+
+.cart_item_details{
+        display: flex;
+    border: 2px solid #b1b1b1;
+    background-color: whitesmoke;
+    justify-content: center;
+    width: 250px;
+    height: auto;
+    flex-wrap: wrap;
+    margin: 50px;
+    border-radius: 7px;
+}
+.row{
+margin: 10px 20px;
+    display: flex;
+}
+.cid{
+    margin: 0px 10px;
+    width: 80px;
+    text-align: center;
+}
