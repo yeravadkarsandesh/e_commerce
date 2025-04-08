@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class Dbconfig {
 	private static Connection conn;
 	public static Connection getConnection() {
-		    String JDBC_URL = "jdbc:mysql://sql6.freesqldatabse.com:3306/sql12771861";
+		    String JDBC_URL = "jdbc:mysql://sql12.freesqldatabase.com:3306/sql12771861";
 	        String JDBC_USER = "sql12771861";
 	        String JDBC_PASSWORD = "uIiWhdft9r";
 	       
