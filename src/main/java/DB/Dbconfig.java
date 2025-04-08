@@ -7,9 +7,9 @@ import java.sql.SQLException;
 public class Dbconfig {
 	private static Connection conn;
 	public static Connection getConnection() {
-		    String JDBC_URL = "jdbc:mysql://sql12.freesqldatabase.com:3306/sql12771861";
-	        String JDBC_USER = "sql12771861";
-	        String JDBC_PASSWORD = "uIiWhdft9r";
+		    String JDBC_URL = "jdbc:mysql://localhost:3306/sandesh";
+	        String JDBC_USER = "root";
+	        String JDBC_PASSWORD = "sandesh";
 	       
 
 
