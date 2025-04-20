@@ -46,7 +46,7 @@ public class way<PrintWriter> extends HttpServlet {
 
 		try { 
 			Class.forName("com.mysql.cj.jdbc.Driver");
-	            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/sandesh","root","sandesh0110");
+	            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/sandesh","root","sandesh");
 	            PreparedStatement ps=con.prepareStatement("insert into info values(?,?)");
 	ps.setString(1, name);
 	ps.setString(2,name1);

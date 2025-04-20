@@ -42,7 +42,7 @@ public class login extends HttpServlet {
 		ResultSet rs=null;
 		try { 
 			Class.forName("com.mysql.cj.jdbc.Driver");
-	            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/sandesh","root","sandesh0110");
+	            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/sandesh","root","sandesh");
 	            PreparedStatement ps=con.prepareStatement("select * from signup where email = ? and password = ?");
 	            ps.setString(1,uemail);
 	        	ps.
