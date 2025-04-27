@@ -112,18 +112,24 @@ color: white;
 //font-family:"Tiro Devanagari Marathi", serif;
 }
 .item img {
-    width: 12vw;
-    height: 21vh;
+    width: 10vw;
+    height: 16vh;
     justify-items: center;
     align-items: center;
     display: flex;
 }
 .item{
-    border:none;
+       border: none;
     display: grid;
     border-radius: 5px;
-    margin:15px;
-    width: 163px;
+    margin: 15px;
+    width: 186px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
 }
    .item:hover{
         border: 0px solid rgb(26, 25, 25);
@@ -200,12 +206,29 @@ search
                     	<div class="name">Wellcome</div>
                     	 <div class="name"><span class="material-symbols-outlined">account_circle</span><%=name %></div>
                     	</div>
-                    	 <%
+                    	
+                    	
+   <% Connection conn=Dbconfig.getConnection(); 
+ //PreparedStatement ps =null;
+ int id=admin.getId();
+ //int id =1;
+ ResultSet rs=null;
+ String query1="select count(*) from cart where customer_id=?; ";
+ PreparedStatement ps1 = conn.prepareStatement(query1);
+ ps1.setInt(1, id);
+ rs = ps1.executeQuery();
+rs.next();
+int No_row =rs.getInt(1);
+	%>
+                
+                    
+
+                                       <li>
+                        <a href="cart.jsp"><span class="material-symbols-outlined">shopping_cart_checkout</span>Cart-<%=No_row%></a>
+                    </li>
+                        	 <%
                     }
                     %>
-                                       <li>
-                        <a href="cart.jsp"><span class="material-symbols-outlined">shopping_cart_checkout</span>Cart</a>
-                    </li>
                    <%
                     if(session.getAttribute("email")==null){
                     	String name=(String)session.getAttribute("name");
@@ -223,22 +246,22 @@ search
                     	session.setAttribute("aemail","mail");
 
                     	%>
-                    <li>
+                    <!-- <li>
                   
                         <a href="Admin_login.jsp"><span class="material-symbols-outlined">account_circle</span>Admin Login</a>
                     </li>
-                  
+                   -->
                        <%
                     }
                    
                      else{
                     	
                     	%>
-                    <li>
+                   <!--  <li>
                   
                         <a href="Admin_login.jsp"><span class="material-symbols-outlined">account_circle</span>Admin Login</a>
                     </li>
-                  
+                   -->
                        <%
                     }
                     %>
