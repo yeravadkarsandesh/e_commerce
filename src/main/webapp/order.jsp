@@ -95,7 +95,7 @@ display: flex;
 		           
 		           </div>
 		           <div class="Remove2">
-		           <p><input type="submit" name="btn" value="Cancle"></p>
+		           <p><input type="submit" name="btn" value="cancel"></p>
 		           </div>
 		           </div>
   </div>

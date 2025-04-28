@@ -124,7 +124,7 @@ color: white;
     border-radius: 5px;
     margin: 15px;
     width: 186px;
-    overflow-y: auto;
+    overflow-y: hidden;
     box-sizing: border-box;
     overflow-x: hidden;
     justify-content: center;

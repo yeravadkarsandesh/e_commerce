@@ -44,7 +44,7 @@ public class Detail_order extends HttpServlet {
 	 }
 	
 			
-		 else if(button.equals("Cancle")) {
+		 else if(button.equals("cancel")) {
 				ord.delete_address(id);
 				ord.delete_final_cart(id);
 				 response.sendRedirect("order.jsp");
